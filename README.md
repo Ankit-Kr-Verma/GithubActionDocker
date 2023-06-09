@@ -1,2 +1,2 @@
 # GithubActionDocker
-Gith action self hosted runner using docker
+Github action self hosted runner using docker
