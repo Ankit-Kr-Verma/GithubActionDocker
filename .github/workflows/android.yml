@@ -27,10 +27,12 @@ jobs:
         run: chmod +x gradlew
       
       - name: Run unit test cases
+        if: always()
         run: ./gradlew test
       
       - name: Upload unit test cases report
         uses: actions/upload-artifact@v3
+        if: always()
         with:
           name: unit_test_report
           path: app/build/reports/tests/testDebugUnitTest/
