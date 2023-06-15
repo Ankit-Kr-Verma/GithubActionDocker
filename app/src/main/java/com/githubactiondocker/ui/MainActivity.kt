@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
         setButtonListener()
     }
 
+    /**
+     * populate the ui & retrieve user info if saved already.
+     * */
     private fun populateUi() {
         val preferences = SharedPreferencesRepo(this)
         if (TextUtils.isEmpty(preferences.getUserInfo().mName)) {
